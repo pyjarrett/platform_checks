@@ -41,4 +41,4 @@ endfunction()
 
 add_library(catch catch.cpp)
 
-add_unit_test(NAME sample SOURCES test_sample.cpp)
+add_unit_test(NAME test_sample SOURCES test_sample.cpp)

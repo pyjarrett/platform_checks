@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(cpp_template)
+project(platform_info)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -14,6 +14,8 @@ include(vendor/common/vendorize-cmake-0.1/vendorize.cmake)
 
 vendorize(common catch2 2.13.0)
 include_directories(SYSTEM ${VENDOR_CATCH2_ROOT})
+
+include(cmake/CompilerOptions.cmake)
 
 add_subdirectory(src)
 add_subdirectory(test)
